@@ -1,0 +1,211 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+}
+
+body{
+background:#050514;
+color:#fff;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#000;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo img{
+height:1000px;
+}
+
+.navbar ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+}
+
+.btn{
+padding:12px 28px;
+border:2px solid #d8b85f;
+color:#d8b85f;
+text-decoration:none;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 8%;
+min-height:100vh;
+}
+
+.hero h1{
+font-size:90px;
+font-family:'Dancing Script',cursive;
+color:#e7d8f2;
+}
+
+.hero h2{
+font-size:35px;
+margin:15px 0;
+}
+
+.hero p{
+max-width:500px;
+line-height:1.8;
+}
+
+.hero-image img{
+width:500px;
+}
+
+section{
+padding:80px 8%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+font-size:42px;
+color:#d8b85f;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.about-cards{
+display:flex;
+gap:15px;
+margin-top:30px;
+}
+
+.card{
+padding:20px;
+background:#12122d;
+border-radius:10px;
+flex:1;
+}
+
+.vision-grid,
+.features,
+.program-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.box,
+.feature,
+.program{
+background:#12122d;
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+text-align:center;
+background:#0b0b20;
+}
+
+.stat h3{
+font-size:50px;
+color:#d8b85f;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact-box{
+background:#12122d;
+padding:40px;
+border-radius:15px;
+max-width:700px;
+margin:auto;
+}
+
+.contact-box p{
+margin:15px 0;
+font-size:20px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#000;
+}
+
+.footer-logo{
+height:90px;
+margin-bottom:20px;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero-image img{
+width:100%;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.gallery-grid{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:1fr 1fr;
+}
+
+.navbar ul{
+display:none;
+}
+
+}
