@@ -1,0 +1,98 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if(localStorage.getItem("loggedIn") !== "true"){
+    window.location.href = "login.html";
+}
+</script>
+<title>Personal Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script defer src="script.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <img src="profile.jpeg" alt="Profile" class="profile-img">
+
+        <h1>"Pratiksha Ranbaware"</h1>
+
+        <p class="role">"Diploma Computer Engineer"</p>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                "Computer Engineer"
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+
+            <div class="edu-box">
+                <h3>"Computer Engineering"</h3>
+                <p>"Zeal polytechnic"</p>
+                <p>"studying"</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Contact Information</h2>
+
+            <p><strong>Email:</strong> "pratiksharanbaware01@gmail.com"</p>
+            <p><strong>Phone:</strong> "+919021185770"</p>
+            <p><strong>Location:</strong> "PUNE, MAHARASHTRA"</p>
+        </div>
+
+        <div class="social-links">
+
+            <a href="https://www.instagram.com/pratu.79?utm_source=qr&igsh=cWVrYmpqdndoZzh1" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/919021185770" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                
+            </a>
+
+            <a href="https://github.com/pratiksharanbaware01-ship-it/git-lab/commits?author=pratiksharanbaware01-ship-itE" target="_blank">
+                <i class="fab fa-github"></i>
+                
+            </a>
+
+            <a href="https://www.linkedin.com/in/pratiksha-ranbaware-56b766380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                
+            </a>
+
+            <a href="mailto:pratiksharanbaware01@gmail.com">
+                <i class="fas fa-envelope"></i>
+                
+            </a>
+
+        </div>
+
+        <button id="welcomeBtn">
+            View Profile
+        </button>
+
+    </div>
+
+</div>
+<button onclick="logout()" class="logout-btn">Logout</button>
+</body>
+</html>
+
+```
